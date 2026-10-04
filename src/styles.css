@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #f3ead8;
+  --color-paper-deep: #e8dcc8;
+  --color-ink: #1f1610;
+  --color-muted: #5e5348;
+  --color-rule: #9a8068;
+  --color-leather: #6b3f2a;
+  --color-leather-soft: #8a5a40;
+  --color-chrome: #161310;
+  --color-chrome-fg: #f3ead8;
+  --color-chrome-muted: #b8a894;
+  --color-chrome-line: #3a322c;
+  --color-fill-soft: #efe4d0;
+  --color-warn: #7a3a22;
+  --font-naskh: "Noto Naskh Arabic", "Amiri", serif;
+  --font-vazir: "Vazirmatn", "Tahoma", sans-serif;
+  --text-pt7: 7pt;
+  --text-pt8: 8pt;
+  --text-pt9: 9pt;
+  --text-pt10: 10pt;
+  --text-pt11: 11pt;
+  --text-pt12: 12pt;
+  --text-pt13: 13pt;
+  --text-pt14: 14pt;
+  --text-pt16: 16pt;
+  --text-pt18: 18pt;
+  --text-pt22: 22pt;
+  --text-pt28: 28pt;
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+.a5-sheet {
+  width: 148mm;
+  height: 210mm;
+  padding: 11mm 10mm 10mm;
+  box-sizing: border-box;
+}
+
+@media screen {
+  .a5-stage {
+    zoom: 0.86;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .a5-stage {
+    zoom: 0.64;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .a5-stage {
+    zoom: 0.52;
+  }
+}
+
+.print-stack {
+  display: none;
+}
+
+@page {
+  size: A5;
+  margin: 0;
+}
+
+@media print {
+  html,
+  body {
+    background: #fff !important;
+    color: #1f1610 !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-stack {
+    display: block !important;
+  }
+
+  .print-root {
+    background: #fff !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .a5-sheet {
+    width: 148mm !important;
+    height: 210mm !important;
+    box-shadow: none !important;
+    transform: none !important;
+    zoom: 1 !important;
+    margin: 0 !important;
+    page-break-after: always;
+    break-after: page;
+    border-radius: 0 !important;
+  }
+
+  .a5-sheet:last-child {
+    page-break-after: auto;
+    break-after: auto;
+  }
+}

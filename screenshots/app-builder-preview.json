@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "جزوه راهبردی صنعت نوین معرق چرم",
+      "hasCanvas": false,
+      "bodyTextLen": 563,
+      "bodyTextHash": "36d449fb0e315dfe1ec5647d0b9a102ac2e4472cac29281124404a4c22888b8c",
+      "bodyTextPrefix": "فهرست جزوه راهبردی صنعت نوین معرق چرم متون فیکس‌شده کتاب · قطع A",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "جزوه راهبردی صنعت نوین معرق چرم",
+      "hasCanvas": false,
+      "bodyTextLen": 550,
+      "bodyTextHash": "9752f87b74729b4492150d6d781defd2292e42ad32679dabd6a19fe276a3d20f",
+      "bodyTextPrefix": "جزوه راهبردی صنعت نوین معرق چرم متون فیکس‌شده کتاب · قطع A5 · اج",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
